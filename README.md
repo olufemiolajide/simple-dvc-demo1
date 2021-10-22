@@ -122,6 +122,8 @@ dvc metrics diff
 
 git add . && git commit -m "tracker added"
 
+git push origin main
+
 
 
 # Create load_data.py in src
