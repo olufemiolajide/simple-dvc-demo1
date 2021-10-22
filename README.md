@@ -87,6 +87,9 @@ python src\load_data.py
 
 dvc repro
 
+git add . && git commit -m "stage 1 complete"
+
+git push origin main
 
 
 
