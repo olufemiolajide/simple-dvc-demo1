@@ -125,6 +125,23 @@ git add . && git commit -m "tracker added"
 git push origin main
 
 
+#Create tox.ini file
+
+mkdir tests
+
+create conftest.py and test_config.py files in tests folder
+
+create__init__.py in tests folder
+
+create setup.py
+
+pip install -e .
+
+pip freeze  #to check what packages are installed
+
+
+git add . && git commit -m "setup done" && git push origin main
+
 
 # Create load_data.py in src
 
