@@ -92,6 +92,20 @@ git add . && git commit -m "stage 1 complete"
 git push origin main
 
 
+#develop split_data.py
+
+dvc repro
+
+git add . && git commit -m "stage 2 complete"
+
+git push origin main
+
+
+#develop train_and_evaluate.py
+
+dvc repro
+
+git add . && git commit -m "stage 3 complete"
 
 # Create load_data.py in src
 
