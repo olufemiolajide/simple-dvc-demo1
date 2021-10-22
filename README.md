@@ -83,7 +83,7 @@ git push origin main
 python src\load_data.py
 
 
-#develop dvc.yaml script
+#develop dvc.yaml script in src folder
 
 dvc repro
 
@@ -92,7 +92,7 @@ git add . && git commit -m "stage 1 complete"
 git push origin main
 
 
-#develop split_data.py
+#develop split_data.py in src folder
 
 dvc repro
 
@@ -101,11 +101,28 @@ git add . && git commit -m "stage 2 complete"
 git push origin main
 
 
-#develop train_and_evaluate.py
+#develop train_and_evaluate.py in src folder
 
 dvc repro
 
 git add . && git commit -m "stage 3 complete"
+
+git push origin main
+
+
+mkdir report
+
+#Develop params.json and scores.json in report folder
+
+dvc repro
+
+dvc metrics show
+
+dvc metrics diff
+
+git add . && git commit -m "tracker added"
+
+
 
 # Create load_data.py in src
 
