@@ -35,11 +35,11 @@ jobs:
     - name: Test with pytest
       run: |
         pytest -v
-    # - name: deploy to heroku
-    #   env:
-    #     heroku_api_token: ${{ secrets.heroku_api_token }}
-    #     heroku_app_name: ${{ secrets.heroku_app_name }}
-    #   if: github.ref == 'refs/heads/main' && job.status == 'success'
-    #   run: |
-    #     git remote add heroku https://heroku:$heroku_api_token@git.heroku.com/$heroku_app_name.git
-    #     git push heroku head:main -f
+    - name: deploy to heroku
+      env:
+        heroku_api_token: ${{ secrets.heroku_api_token }}
+        heroku_app_name: ${{ secrets.heroku_app_name }}
+      if: github.ref == 'refs/heads/main' && job.status == 'success'
+      run: |
+        git remote add heroku https://heroku:$heroku_api_token@git.heroku.com/$heroku_app_name.git
+        git push heroku head:main -f
