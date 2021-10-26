@@ -168,5 +168,32 @@ build your own package commands-
 python setup.py sdist bdist_wheel
 ```
 
-
 git add . && git commit -m "pytest example" && git push origin main
+
+```
+# mkdir "templates" "static/css" "static/js"
+```
+
+```
+mkdir "prediction_service/model" "webapp" "webapp/static/css" "webapp/static/script" "webapp/templates"
+```
+
+echo> "app.py"
+
+echo> "prediction_service\\prediction.py"
+
+echo> "webapp\static\css\main.css"
+
+echo> "webapp\static\script\.index.js"
+
+echo> "webapp\templates\index.html"
+
+echo> "webapp\\templates\404.html"
+
+echo> "webapp\templates\base.html"
+
+
+
+
+
+#-- End of Story
