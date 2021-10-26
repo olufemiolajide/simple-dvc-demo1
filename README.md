@@ -192,6 +192,7 @@ echo> "webapp\\templates\404.html"
 
 echo> "webapp\templates\base.html"
 
+git add . && git commit -m "web structure added" && git push origin main
 
 
 
