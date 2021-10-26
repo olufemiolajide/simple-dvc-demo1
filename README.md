@@ -24,9 +24,7 @@ download the data from
 
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
 
-
 python template.py
-
 
 ```bash
 git init
@@ -62,12 +60,9 @@ git branch -M main
 git push origin main
 ```
 
-
-
 git add . && git commit -m "params added"  # to update params
 
 git push origin main  # to push updated params
-
 
 ##develop get_data.py script in src folder
 
@@ -77,11 +72,9 @@ git add . && git commit -m "add get_data"
 
 git push origin main
 
-
 ##develop load_data.py script in src folder
 
 python src\load_data.py
-
 
 #develop dvc.yaml script in src folder
 
@@ -91,7 +84,6 @@ git add . && git commit -m "stage 1 complete"
 
 git push origin main
 
-
 #develop split_data.py in src folder
 
 dvc repro
@@ -100,7 +92,6 @@ git add . && git commit -m "stage 2 complete"
 
 git push origin main
 
-
 #develop train_and_evaluate.py in src folder
 
 dvc repro
@@ -108,7 +99,6 @@ dvc repro
 git add . && git commit -m "stage 3 complete"
 
 git push origin main
-
 
 mkdir report
 
@@ -124,7 +114,6 @@ git add . && git commit -m "tracker added"
 
 git push origin main
 
-
 #Create tox.ini file
 
 mkdir tests
@@ -139,9 +128,13 @@ pip install -e .
 
 pip freeze  #to check what packages are installed
 
-
 git add . && git commit -m "setup done" && git push origin main
 
+mkdir -p prediction_service\model
+
+mkdir webapp
+
+create app.py
 
 # Create load_data.py in src
 
@@ -174,3 +167,6 @@ build your own package commands-
 ```bash
 python setup.py sdist bdist_wheel
 ```
+
+
+git add . && git commit -m "pytest example" && git push origin main
