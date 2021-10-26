@@ -213,5 +213,6 @@ git add . && git commit -m "github actions workflow added" && git push origin ma
 
 echo>Procfile
 
+git add . && git commit -m "github actions workflow updated" && git push origin main
 
 #-- End of Story
