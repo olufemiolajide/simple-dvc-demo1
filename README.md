@@ -195,6 +195,19 @@ echo> "webapp\templates\base.html"
 git add . && git commit -m "web structure added" && git push origin main
 
 
+git add . && git commit -m "app created and tested" && git push origin main
+
+
+# GIT ACTIONS
+
+-- #mkdir "templates" "static/css" "static/js"
+
+mkdir  ".github" ".github/workflows"
+
+echo> ".github\workflows\ci-cd.yaml"
+
+git add . && git commit -m "github actions workflow added" && git push origin main
+
 
 
 #-- End of Story
