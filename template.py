@@ -2,12 +2,10 @@ import os
 
 
 dirs = [
-    "data_given",
     os.path.join("data", "raw"),
     os.path.join("data","processed"),
     "notebooks",
     "saved_models",
-    "report",
     "src"
 ]
 
@@ -24,3 +22,6 @@ files = [
     os.path.join("src","__init__.py")
 ]
 
+for file_ in files:
+    with open(file_, "w") as f:
+        pass
